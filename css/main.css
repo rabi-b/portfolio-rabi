@@ -1,0 +1,55 @@
+/***Global styles***/
+.content-wrapper {
+    width: 90%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Lekton', 'Lexend Tera', sans-serif;
+    font-size: 0.9em;
+    color: #000;
+}
+
+header, footer, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    font-family: 'Lekton';
+    font-size: 1.1em;
+    font-weight: 400px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+
+/*--Mobile--*/
+
+/***Header & footer styles***/
+
+
+/***Header styles***/
+
+header h1 {
+    justify-content: space-between;
+}
+
+
+/***Main styles***/
+
+/*About*/
+
+/*Skills*/
+
+/*Projects*/
+
+/*Footer*/
+
+
+/*--Breakpoints for tablet and desktop--*/
