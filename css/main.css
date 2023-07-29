@@ -10,10 +10,13 @@ html {
 body {
     font-family: 'Lekton', 'Lexend Tera', sans-serif;
     font-size: 0.9em;
-    color: #000;
+    color: #0000;
+    background-color: #eeefda;
 }
 
-header, footer, main {
+header,
+footer,
+main section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,10 +25,11 @@ header, footer, main {
 ul {
     font-family: 'Lekton';
     font-size: 1.1em;
-    font-weight: 400px;
+    font-weight: 400;
     list-style: none;
-    text-transform: uppercase;
 }
+
+
 
 
 
@@ -36,8 +40,24 @@ ul {
 
 /***Header styles***/
 
-header h1 {
+header ul {
+    display: flex;
+    text-transform: lowercase;
     justify-content: space-between;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+header span {
+    font-family: 'Lekton', serif;
+    font-weight: bold;
+}
+
+header p, header h3 {
+    font-size: 1.5em;
 }
 
 
@@ -51,5 +71,9 @@ header h1 {
 
 /*Footer*/
 
+footer .social-icons i {
+    font-size: 1.3em;
+    color: #152A3E;
+  }
 
 /*--Breakpoints for tablet and desktop--*/
