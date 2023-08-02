@@ -23,24 +23,30 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" id="contact-button">Contact</a></li>
                 </ul>
             </nav>
-            <h3>Hello! My name is</h3>
-            <h1>Rabi Bah</h1>
-            <p>I'm a <span>front end developer</span> that enjoys making beautiful & interactive websites.</p>
+            <div class="introduction">
+                <h3>Hello! My name is</h3>
+                <h1>Rabi Bah</h1>
+                <p>I'm a <span>front end developer</span> that enjoys making beautiful & interactive websites.</p>
+                <i class="fa-sharp fa-solid fa-seedling fa-2xl" style="color: #F8D697;"></i>
+            </div>
         </div>
     </header>
     <main>
         <section id="about">
             <div class="content-wrapper">
+                <figure>
+                    <img src="img/rabi.jpeg" alt="portrait of Rabi">
+                </figure>
                 <h2>About Me</h2>
-                <h3>Hi! I'm Rabi and I'm nomadic front-end developer.</h3>
+                <h3>Hi! I'm Rabi - a nomadic front end developer based in Toronto, Canada.</h3>
                 <p>Creativity & community are at the core of everything I do. Always one to dig deeper, I've used my art
                     and care for people to contribute to impactful social initiatives. My curiosity has led me to look
                     under the hood of the web by building beautiful websites. I hope to join a remote team where I can
                     contribute my thoughtful approach to coding accessible and interactive web pages.</p>
-                <p>Outside of coding, I'm producing music, learning how to surf and collecting stamps in my passport.
+                <p>Outside of coding, I'm DJ'ing, learning how to surf and solving Sudoku puzzles.
                 </p>
                 <p>Let's build!</p>
             </div>
@@ -54,6 +60,7 @@
                         <li>CSS3</li>
                         <li>JavaScript</li>
                         <li>React</li>
+                        <li>Responsive Web Development</li>
                     </ul>
                 </div>
                 <h2>Tools</h2>
@@ -70,56 +77,74 @@
         </section>
         <section id="projects">
             <div class="content-wrapper">
+                <i class="fa-solid fa-rainbow fa-2xl" style="color: #F8D697"></i><br>
                 <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <div class="project-list">
-                            <a href=""><img src="" alt=""></a>
-                            <h3>Unplugged</h3>
-                            <p>A 3-page responsive website for a fictional retreat that adapts to mobile, tablet, and
-                                desktop
-                                screens. It includes interactive components such as a text input and live map.</p>
-                            <p><span>Skills:</span>HTML5, CSS3, Responsive Web Development</p>
-                            <p><span>Tools:</span>Git & GitHub, Chrome Dev Tools</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project-list">
-                            <a href=""><img src="" alt=""></a>
-                            <h3>Rogue Pickings</h3>
-                            <p>A single-page responsive website for a fictional food truck.</p>
-                            <p><span>Skills:</span>HTML5, CSS3, Responsive Web Development</p>
-                            <p><span>Tools:</span>Git & GitHub, Chrome Dev Tools</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project-list">
-                            <a href=""><img src="" alt=""></a>
-                            <h3>Sticky Notes App</h3>
-                            <p>A single-page responsive website for a fictional food truck.</p>
-                            <p><span>Skills:</span>Javascript, React</p>
-                            <p><span>Tools:</span>Visual Studio Code</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="project-list">
+                    <a href="https://rabi-b.github.io/unplugged-code/" target="_blank"><img src="img/unplugged.png"
+                            alt="unplugged website screenshot"></a>
+                    <h3>Unplugged</h3>
+                    <p>A 3-page responsive website for a fictional retreat that adapts to mobile, tablet, and
+                        desktop
+                        screens. It includes interactive components such as a text input and live map.</p>
+                    <div class="skills-tools">
+                    <p><strong>Skills:</strong> HTML5, CSS3, Responsive Web Development</p>
+                    <p><strong>Tools:</strong> Git & GitHub, Chrome Dev Tools</p>
+                    </div>
+                    <a class="button" href="https://rabi-b.github.io/unplugged-code/" target="_blank">Live
+                        Page</a>
+                </div>
+                <div class="project-list">
+                    <a href="https://rabi-b.github.io/rogue-pickings-design/" target="_blank"><img
+                            src="img/rogue-pickings.png" alt="rogue pickings website screenshot"></a>
+                    <h3>Rogue Pickings</h3>
+                    <p>A single-page responsive website for a fictional food truck.</p>
+                    <div class="skills-tools">
+                    <p><strong>Skills:</strong> HTML5, CSS3, Responsive Web Development</p>
+                    <p><strong>Tools:</strong> Git & GitHub, Chrome Dev Tools</p>
+                    </div>
+                    <a class="button" href="https://rabi-b.github.io/rogue-pickings-design/" target="_blank">Live
+                        Page</a>
+                </div>
+                <div class="project-list">
+                    <a href="https://5fy325.csb.app/" target="_blank"><img src="img/sticky-notes-app.png"
+                            alt="sticky notes app websites screenshot"></a>
+                    <h3>Sticky Notes App</h3>
+                    <p>A single-page interactive sticky note app using React. Users are able to save, edit and remove each note they create.</p>
+                    <div class="skills-tools">
+                    <p><strong>Skills:</strong> Javascript, React</p>
+                    <p><strong>Tools:</strong> Visual Studio Code</p>
+                    </div>
+                    <a class="button" href="https://5fy325.csb.app/" target="_blank">Live Page</a>
+                </div>
+                <div class="project-list">
+                    <a href="https://www.masterstudio.org/
+                            " target="_blank"><img src="img/masterstudio.png"
+                            alt="uva masterstudio website screenshot"></a>
+                    <h3>UvA Master Studio</h3>
+                    <p>A multi-page website designed in 2019 for the University of Amsterdam Masterstudio Future Cities course, part of the the Urban and Regional Planning Master's program. The website was designed on Wix.</p>
+                    <div class="skills-tools">
+                    <p><strong>Skills:</strong> HTML5, CSS3</p>
+                    <p><strong>Tools:</strong> Wix</p>
+                    </div>
+                    <a class="button" href="https://www.masterstudio.org/
+                            " target="_blank">Live Page</a>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="content-wrapper">
             <div class="footer-content">
-                <div class="contact">
+                <div class="contact" id="contact">
                     <h2>Let's build!</h2>
-                    <address>
-                        <p>rabiatoub@gmail.com</p>
-                    </address>
+                    <a class="email" href="mailto:rabiatoub@gmail.com"><strong>rabiatoub@gmail.com</strong></a>
+                    <i class="fa-solid fa-sun fa-2xl" style="color: #F8D697;"></i>
                 </div>
                 <div class="social">
                     <div class="social-icons">
                         <p><a href="https://www.linkedin.com/in/rabibah" target="_blank"><i
                                     class="fab fa-linkedin"></i></a></p>
-                        <p><a href="https://www.github.com/rabi-b" target="_blank"><i
-                                    class="fab fa-github"></i></a></p>
+                        <p><a href="https://www.github.com/rabi-b" target="_blank"><i class="fab fa-github"></i></a></p>
                     </div>
                 </div>
             </div>

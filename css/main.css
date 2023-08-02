@@ -1,4 +1,5 @@
 /***Global styles***/
+
 .content-wrapper {
     width: 90%;
 }
@@ -10,8 +11,27 @@ html {
 body {
     font-family: 'Lekton', 'Lexend Tera', sans-serif;
     font-size: 0.9em;
-    color: #0000;
-    background-color: #eeefda;
+    color: #152A3E;
+    background-color: #CAC691;
+}
+
+a {
+    text-decoration: none;
+    color: #152A3E;
+}
+
+h2 {
+    font-size: 2em;
+    color: #eeefda;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.4em;
+    font-size: 1.5em;
 }
 
 header,
@@ -20,23 +40,19 @@ main section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 ul {
     font-family: 'Lekton';
-    font-size: 1.1em;
-    font-weight: 400;
+    font-size: 1.5em;
+    font-weight: 500;
     list-style: none;
 }
 
 
 
-
-
 /*--Mobile--*/
-
-/***Header & footer styles***/
-
 
 /***Header styles***/
 
@@ -45,10 +61,30 @@ header ul {
     text-transform: lowercase;
     justify-content: space-between;
     padding: 30px 0;
+    font-weight: 700;
+    border-bottom: 3px solid #eeefda;
+}
+
+header #contact-button {
+    background-color: #152A3E;
+    border-radius: 30px;
+    padding: 10px;
+    color: #eeefda;
+}
+
+header .introduction {
+    text-align: center;
+}
+
+header .introduction i{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
 }
 
 header h1 {
     font-family: 'Lexend Tera', sans-serif;
+    font-size: 2.5em;
 }
 
 header span {
@@ -56,24 +92,143 @@ header span {
     font-weight: bold;
 }
 
-header p, header h3 {
-    font-size: 1.5em;
-}
-
 
 /***Main styles***/
 
 /*About*/
 
+#about figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about img {
+    width: 80%;
+    border-radius: 50px;
+    border: 5px solid #152A3E; 
+}
+
 /*Skills*/
 
+/**
+#skills ul {
+    padding-left: 2em;
+    list-style-type: none;
+}
+#skills ul li {
+    background-image: url('../img/circle-notch-solid.svg');
+    background-position: 0 0;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    line-height: 1.4em;
+    padding-left: 2em;
+}
+**/
+
+#skills ul {
+    list-style: disc;
+    line-height: 1.4em;
+    font-weight: 700;
+}
 /*Projects*/
+
+#projects i {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#projects h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+#projects a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column wrap;
+    border: 5px solid #152A3E;
+    border-radius: 50px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.project-list p {
+    margin: 5px;
+}
+
+.project-list img {
+    width: 80%;
+}
+
+.project-list a {
+    background-color: #152A3E;
+    border-radius: 30px;
+    padding: 20px;
+    color: #eeefda;
+}
+
+.project-list .button {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.project-list .skills-tools {
+    margin: 20px 0;
+}
+
 
 /*Footer*/
 
-footer .social-icons i {
-    font-size: 1.3em;
-    color: #152A3E;
-  }
+footer h2 {
+    border-top: 3px solid #eeefda;
+    padding-top: 50px;
+    margin: 0;
+}
 
+footer .social-icons i {
+    font-size: 1.5em;
+    color: #152A3E;
+    margin: 10px;
+    background-color: #CAC691;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .email {
+    font-size: 2em;
+}
+
+footer .contact i {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px 0;
+}
+
+.contact, .social, .copyright {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.8em;
+    margin: 80px 0;
+    color: #eeefda;
+}
 /*--Breakpoints for tablet and desktop--*/
