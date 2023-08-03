@@ -1,6 +1,7 @@
 /*--GLOBAL STYLES--*/
 
-.content-wrapper, .skills-tools {
+.content-wrapper,
+.skills-tools {
     width: 90%;
 }
 
@@ -31,7 +32,7 @@ h3 {
 
 p {
     line-height: 1.4em;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 header,
@@ -45,7 +46,7 @@ main section {
 
 ul {
     font-family: 'Lekton';
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
     list-style: none;
 }
@@ -64,6 +65,10 @@ header ul {
     border-bottom: 3px solid #eeefda;
 }
 
+header ul a {
+    color: #eeefda;
+}
+
 header #contact-button {
     background-color: #152A3E;
     border-radius: 30px;
@@ -73,9 +78,10 @@ header #contact-button {
 
 header .introduction {
     text-align: center;
+    padding-top: 5px;
 }
 
-header .introduction i{
+header .introduction i {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -83,7 +89,7 @@ header .introduction i{
 
 header h1 {
     font-family: 'Lexend Tera', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 header span {
@@ -99,14 +105,15 @@ header span {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 #about img {
     width: 80%;
     border-radius: 50px;
-    border: 5px solid #152A3E; 
+    border: 5px solid #152A3E;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #about h3 {
@@ -158,7 +165,7 @@ header span {
 .project-list-item {
     display: flex;
     justify-content: center;
-    flex-flow: column ;
+    flex-flow: column;
     border: 5px solid #152A3E;
     border-radius: 50px;
     padding: 20px;
@@ -180,7 +187,7 @@ header span {
 .project-list-item a {
     background-color: #152A3E;
     border-radius: 30px;
-    padding: 20px;
+    padding: 10px;
     color: #eeefda;
 }
 
@@ -200,7 +207,7 @@ header span {
 
 /*Footer*/
 
-footer h2 {
+.footer-content {
     border-top: 3px solid #eeefda;
     padding: 50px 0 10px 0;
     margin: 0;
@@ -234,7 +241,9 @@ footer .contact i {
     margin: 40px 0 20px 0;
 }
 
-.contact, .social, .copyright {
+.contact,
+.social,
+.copyright {
     text-align: center;
 }
 
@@ -251,30 +260,31 @@ footer .contact i {
 
     /**Global styles**/
     h2 {
-        font-size: 2.5em;
-    }
-    
-    h3, p {
-        font-size: 2em;
+        font-size: 1.9em;
     }
 
+    h3,
+    p,
     ul {
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
-    
+
     /**Header**/
 
     header h1 {
-        font-size: 3em;
-    }
-    /**About**/
-
-    #about h3 {
         font-size: 2em;
     }
 
-    #about img, .skills-tools {
+    /**About**/
+
+    #about h3 {
+        font-size: 1.5em;
+    }
+
+    #about img,
+    .skills-tools {
         margin-bottom: 20px;
+        width: 50%;
     }
 
     /***Skills***/
@@ -284,6 +294,7 @@ footer .contact i {
         justify-content: space-between;
         align-items: center;
         flex-flow: row wrap;
+        width: 90%;
     }
 
     /**
@@ -305,7 +316,7 @@ footer .contact i {
     }
 
     .project-list-item h3 {
-        font-size: 1.7em;
+        font-size: 1.5em;
         margin: 20px 0;
     }
 
@@ -317,16 +328,18 @@ footer .contact i {
         font-size: 1.3em;
         padding: 10px 0;
     }
-   
+
     /**Footer**/
 
-    footer h2, .email {
-        font-size: 2em;
+    footer h2,
+    .email {
+        font-size: 1.7em;
     }
 
     footer .social-icons i {
-        font-size: 1em;
+        font-size: 1.2em;
     }
+
     .copyright {
         font-size: 0.7em;
     }
@@ -336,7 +349,96 @@ footer .contact i {
 
 @media only screen and (min-width: 1200px) {
 
+    /**Global styles**/
+    .content-wrapper,
+    .skills-tools {
+        width: 70%;
+    }
 
+    h2 {
+        font-size: 1.4em;
+    }
 
+    h3,
+    p,
+    ul,
+    .project-list-item p {
+        font-size: 1.05em;
+    }
 
+    /**Header**/
+
+    header .introduction i {
+        margin: 40px 0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header ul {
+        justify-content: center;
+    }
+
+    header ul li {
+        margin: 0 20px;
+    }
+
+    /**About**/
+
+    #about .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row-reverse;
+    }
+
+    #about img {
+        width: 75%;
+        border-radius: 30px;
+        border: 3px solid #152A3E;
+        padding: 5px;
+    }
+
+    #about h3 {
+        font-size: 1.1em;
+    }
+
+    /***Skilss***/
+
+    .skills-tools {
+        justify-content: flex-start;
+    }
+
+    .skill-list,
+    .tool-list {
+        margin-right: 30px;
+    }
+
+    /***Projects***/
+
+    .project-list-item {
+        padding: 15px;
+    }
+
+    .project-list-item h3 {
+        font-size: 1.3em;
+    }
+
+    .project-list-item .button {
+        width: 40%;
+    }
+
+    /***Footer***/
+
+ 
+
+    footer h2,
+    .email,
+    footer .social-icons i {
+        font-size: 1.4em;
+    }
+
+    .copyright {
+        font-size: 1em;
+    }
 }
