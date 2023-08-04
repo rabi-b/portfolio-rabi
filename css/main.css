@@ -23,7 +23,7 @@ a {
 
 h2 {
     font-size: 2em;
-    color: #eeefda;
+    color: #ffffff;
 }
 
 h3 {
@@ -61,11 +61,11 @@ header ul {
     justify-content: space-between;
     padding: 30px 0;
     font-weight: 700;
-    border-bottom: 3px solid #eeefda;
+    border-bottom: 3px solid #ffffff;
 }
 
 header ul a {
-    color: #eeefda;
+    color: #ffffff;
 }
 
 header a:hover {
@@ -76,11 +76,11 @@ header #contact-button {
     background-color: #152A3E;
     border-radius: 30px;
     padding: 10px;
-    color: #eeefda;
+    color: #ffffff;
 }
 
 header #contact-button:hover {
-    background-color: #eeefda;
+    background-color: #ffffff;
     border-radius: 30px;
     padding: 10px;
     color: #152A3E;
@@ -199,12 +199,11 @@ header span {
     background-color: #152A3E;
     border-radius: 30px;
     padding: 10px;
-    color: #eeefda;
+    color: #ffffff;
 }
 
 .project-list-item a:hover {
-    background-color: #eeefda;
- 
+    background-color: #ffffff;
     color: #152A3E;
 }
 
@@ -223,7 +222,7 @@ header span {
 /*Footer*/
 
 .footer-content {
-    border-top: 3px solid #eeefda;
+    border-top: 3px solid #ffffff;
     padding: 50px 0 10px 0;
     margin: 0;
 }
@@ -251,7 +250,7 @@ footer .email {
 }
 
 .email:hover {
-    color: #eeefda;
+    color: #ffffff;
     background-color: #E9B14C;
     border-radius: 30px;
     padding: 15px;
@@ -272,7 +271,7 @@ footer .contact i {
 .copyright {
     font-size: 1em;
     margin: 90px 0 50px 0;
-    color: #eeefda;
+    color: #ffffff;
 }
 
 /*--TABLET & DESKTOP--*/
