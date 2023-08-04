@@ -51,7 +51,6 @@ ul {
     list-style: none;
 }
 
-
 /*--MOBILE--*/
 
 /***Header styles***/
@@ -69,12 +68,24 @@ header ul a {
     color: #eeefda;
 }
 
+header a:hover {
+    color: #152A3E;
+}
+
 header #contact-button {
     background-color: #152A3E;
     border-radius: 30px;
     padding: 10px;
     color: #eeefda;
 }
+
+header #contact-button:hover {
+    background-color: #eeefda;
+    border-radius: 30px;
+    padding: 10px;
+    color: #152A3E;
+}
+
 
 header .introduction {
     text-align: center;
@@ -191,6 +202,12 @@ header span {
     color: #eeefda;
 }
 
+.project-list-item a:hover {
+    background-color: #eeefda;
+ 
+    color: #152A3E;
+}
+
 .project-list-item .button {
     font-size: 1.5em;
     margin: 10px 0;
@@ -202,8 +219,6 @@ header span {
     flex-direction: column;
     margin: 20px 0;
 }
-
-
 
 /*Footer*/
 
@@ -233,6 +248,13 @@ footer p {
 
 footer .email {
     font-size: 1.5em;
+}
+
+.email:hover {
+    color: #eeefda;
+    background-color: #E9B14C;
+    border-radius: 30px;
+    padding: 15px;
 }
 
 footer .contact i {
@@ -295,11 +317,6 @@ footer .contact i {
         align-items: center;
         flex-flow: row wrap;
         width: 90%;
-    }
-
-    /**
-    .tool-list h2 {
-        margin-left: 17px;
     }
 
     /**Projects**/
