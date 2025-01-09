@@ -1,7 +1,7 @@
 /*--GLOBAL STYLES--*/
 
 .content-wrapper,
-.skills-tools {
+.skills {
     width: 90%;
 }
 
@@ -11,10 +11,10 @@ html {
 }
 
 body {
-    font-family: 'Lekton', 'Lexend Tera', sans-serif;
+    font-family: 'Montserrat', 'Lexend Tera', sans-serif;
     font-size: 0.9em;
     color: #152A3E;
-    background-color: #CAC691;
+    background-color: #f7f2df;
 }
 
 a {
@@ -23,7 +23,7 @@ a {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #152A3E;
 }
 
@@ -46,7 +46,7 @@ main section {
 }
 
 ul {
-    font-family: 'Lekton';
+    font-family: 'Montserrat';
     font-size: 1.2em;
     font-weight: 500;
     list-style: none;
@@ -70,7 +70,7 @@ header ul a {
 }
 
 header a:hover {
-    color: #ffffff;
+    color: #E9B14C;
 }
 
 header #contact-button {
@@ -81,7 +81,7 @@ header #contact-button {
 }
 
 header #contact-button:hover {
-    background-color: #ffffff;
+    background-color: #CAC691;
     border-radius: 30px;
     padding: 10px;
     color: #152A3E;
@@ -101,12 +101,13 @@ header .introduction i {
 
 header h1 {
     font-family: 'Lexend Tera', sans-serif;
-    font-size: 2.2em;
+    font-size: 1.5em;
 }
 
 header span {
-    font-family: 'Lekton', serif;
-    font-weight: bold;
+    font-family: 'Lexend Tera', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
 }
 
 /***Main styles***/
@@ -121,7 +122,7 @@ header span {
 }
 
 #about img {
-    width: 80%;
+    width: 50%;
     border-radius: 50px;
     border: 5px solid #152A3E;
     padding: 10px;
@@ -133,6 +134,38 @@ header span {
 }
 
 /*Skills*/
+
+#skills i {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+.all-skills {
+    border: 5px solid #152A3E;
+    border-radius: 50px;
+}
+.tool-list h3 {
+    margin: 20px;
+}
+
+.tool-list ul {
+    margin: 0;
+}
+
+.tool-list {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    /*border: 5px solid #152A3E;
+    border-radius: 50px;*/
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
 /**
 #skills ul {
@@ -152,7 +185,7 @@ header span {
 #skills ul {
     list-style: disc;
     line-height: 1.1em;
-    font-weight: 700;
+    /*font-weight: 700;*/
 }
 
 
@@ -204,7 +237,7 @@ header span {
 }
 
 .project-list-item a:hover {
-    background-color: #ffffff;
+    background-color: #CAC691;
     color: #152A3E;
 }
 
@@ -282,7 +315,7 @@ footer .contact i {
 
     /**Global styles**/
     h2 {
-        font-size: 1.9em;
+        font-size: 1.75em;
     }
 
     h3,
@@ -294,7 +327,7 @@ footer .contact i {
     /**Header**/
 
     header h1 {
-        font-size: 2em;
+        font-size: 1.75em;
     }
 
     /**About**/
@@ -303,20 +336,36 @@ footer .contact i {
         font-size: 1.5em;
     }
 
+    #about img {
+        width: 70%;
+    }
+
     #about img,
     .skills-tools {
         margin-bottom: 20px;
         width: 50%;
     }
 
+
     /***Skills***/
 
-    .skills-tools {
+   /* .skills-tools {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-flow: row wrap;
         width: 90%;
+    }*/
+
+    .all-skills {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+
+    .tool-list h3 {
+        font-size: 1.5em;
     }
 
     /**Projects**/
@@ -367,8 +416,7 @@ footer .contact i {
 @media only screen and (min-width: 1200px) {
 
     /**Global styles**/
-    .content-wrapper,
-    .skills-tools {
+    .content-wrapper, .skills-tools {
         width: 70%;
     }
 
@@ -407,29 +455,24 @@ footer .contact i {
     #about .content-wrapper {
         display: flex;
         justify-content: space-between;
-        flex-flow: row-reverse;
+        flex-flow: row;
     }
 
     .about-text {
-        width: 150%;
+        width: 100%;
     }
 
     #about img {
-        width: 65%;
+        width: 75%;
         border-radius: 30px;
         border: 3px solid #152A3E;
         padding: 5px;
     }
 
-    /***Skilss***/
+    /***Skills***/
 
-    .skills-tools {
-        justify-content: flex-start;
-    }
-
-    .skill-list,
-    .tool-list {
-        margin-right: 30px;
+    .all-skills {
+        flex-flow: row;
     }
 
     /***Projects***/
